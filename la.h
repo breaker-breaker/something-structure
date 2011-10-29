@@ -8,6 +8,7 @@ template <class T> class la {
         unsigned size();
         T& operator [] (size_type i);
     private:
-        T* _data[];
+        T* _blocks[];//heads of sorts
+        T* _jumps[];//tails of sorts
         unsigned size;
 };
