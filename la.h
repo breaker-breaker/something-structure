@@ -6,8 +6,8 @@
 template <class T> class la {
     public:
         unsigned size();
-        T operator [] (int index);
+        T& operator [] (size_type i);
     private:
-        T* _data;
+        T* _data[];
         unsigned size;
 };
